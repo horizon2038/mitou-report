@@ -19,6 +19,7 @@ RESOURCES := $(shell find $(RESOURCEDIR) -type f -name "*.typ")
 all : $(BUILDDIR)/$(TARGET)
 
 $(BUILDDIR)/$(TARGET) : $(MAIN_PAGE) $(PAGES) $(COMPONENTS) $(RESOURCES)
+	mkdir -p $(BUILDDIR)
 	typst compile $< $@ --root $(ROOTDIR)
 
 watch : $(MAIN_PAGE)
