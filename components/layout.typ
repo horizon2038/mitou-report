@@ -59,11 +59,15 @@
 
     // font settings
     // body
+    /*
     set text(
-        font: "FOT-TsukuAOldMin Pr6N",
+        font: "<font>",
     )
+    */
     // code 
-    show raw: set text(font: "Hack")
+    /*
+    show raw: set text(font: "<monospace font>")
+    */
 
     // code block settings
     show raw: set block(fill: luma(240), inset: 2em, radius: 0.5em, width: 100%)

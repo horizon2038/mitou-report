@@ -90,6 +90,10 @@ make watch
 - Fontは`components/layout.typ`の`font settings` Sectionで設定可能です.
 使用可能なFontは`typst fonts`コマンドで確認できます.
 
+> [!IMPORTANT]
+> デフォルトから変更することを強く推奨します!
+> Bodyには視認性の高い日本語フォントを，Codeには等幅フォントを使用することを推奨します.
+
 ### Example
 
 ```typ
