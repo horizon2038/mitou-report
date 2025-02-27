@@ -16,12 +16,12 @@
         #include "/pages/future_challenges_and_prospects.typ"
         #include "/pages/differences_from_the_original_implementation_plan.typ"
         // 複数人プロジェクトの場合に使用
-        #include "/pages/development_responsibilities.typ"
+        // #include "/pages/development_responsibilities.typ"
         #include "/pages/self_analysis_of_glowth.typ"
         // 秘匿ノウハウが含まれる場合に使用
-        #include "/pages/designation_of_confidential_know_how.typ"
+        // #include "/pages/designation_of_confidential_know_how.typ"
         // 特記事項が存在する場合に使用
-        #include "/pages/others.typ"
+        // #include "/pages/others.typ"
         #include "/pages/appendix.typ"
     ],
 )
