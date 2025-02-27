@@ -10,13 +10,21 @@
     contract_number: "123456",
     doc
 ) = {
+    // pdf metadata settings
+    set document(
+        title: [#{year}年度未踏IT人材発掘・育成事業 #{project_name} 成果報告書],
+        author: creator,
+        keywords: ("未踏", "未踏事業", "IPA", "情報処理推進機構", "成果報告書"),
+        date: delivery_date,
+    )
+
     // page global settings
     set page(
         margin: (x: 8em, y: 8em),
     )
     set par(
         leading: 1.24em,
-        first-line-indent: 0em,
+        first-line-indent: 1em,
     )
     set math.equation(
         numbering: "(1.1)"
@@ -55,6 +63,15 @@
             #v(1em)
         ]
     }
+    show heading.where(level: 4): it => {
+        block(width:100%)[
+            #v(1em)
+            #set align(left)
+            #set text(13pt, weight: "regular")
+            #it
+            #v(1em)
+        ]
+    }
     set heading(numbering: "1.")
 
     // font settings
@@ -70,7 +87,7 @@
     */
 
     // code block settings
-    show raw: set block(fill: luma(240), inset: 2em, radius: 0.5em, width: 100%)
+    show raw: set block(fill: luma(240), inset: 2em, radius: 0.2em, width: 100%)
 
     title_block(
         project_name: project_name,
