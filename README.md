@@ -67,7 +67,7 @@
 
 ### Dependency
 
-- Typst
+- Typst 0.13.0+
 - Make
 
 ### Compile
