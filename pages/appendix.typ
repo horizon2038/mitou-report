@@ -11,10 +11,8 @@
 
 // #link_with_description(url: "https://example.com", description: [Example.com])
 
-== 参考文献
-
-#show bibliography : set heading(level: 2)
 #pagebreak()
+#show bibliography : set heading(level: 2)
 #bibliography("/resources/references.bib", title: "参考文献")
 
 // == Sample Codes
