@@ -36,11 +36,13 @@
           chapt_num
           " "
           el.body
-        } else {
+        } else if el.level == 3 {
           h(2em)
           chapt_num
           " "
           el.body
+        } else {
+            continue
         }
       }]
       box(width: 1fr, h(0.5em) + box(width: 1fr, repeat[.]) + h(0.5em))
