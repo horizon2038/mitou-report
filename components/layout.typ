@@ -24,7 +24,7 @@
     )
     set par(
         leading: 1.24em,
-        first-line-indent: 1em,
+        first-line-indent: (amount: 1em, all: true),
     )
     set math.equation(
         numbering: "(1.1)"
